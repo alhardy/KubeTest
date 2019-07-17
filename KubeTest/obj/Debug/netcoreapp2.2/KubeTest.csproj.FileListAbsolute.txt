@@ -1,0 +1,12 @@
+/home/al_hardy/Documents/_dev/_play/KubeTest/KubeTest/bin/Debug/netcoreapp2.2/KubeTest.dll.config
+/home/al_hardy/Documents/_dev/_play/KubeTest/KubeTest/bin/Debug/netcoreapp2.2/KubeTest.deps.json
+/home/al_hardy/Documents/_dev/_play/KubeTest/KubeTest/bin/Debug/netcoreapp2.2/KubeTest.runtimeconfig.json
+/home/al_hardy/Documents/_dev/_play/KubeTest/KubeTest/bin/Debug/netcoreapp2.2/KubeTest.runtimeconfig.dev.json
+/home/al_hardy/Documents/_dev/_play/KubeTest/KubeTest/bin/Debug/netcoreapp2.2/KubeTest.dll
+/home/al_hardy/Documents/_dev/_play/KubeTest/KubeTest/bin/Debug/netcoreapp2.2/KubeTest.pdb
+/home/al_hardy/Documents/_dev/_play/KubeTest/KubeTest/obj/Debug/netcoreapp2.2/KubeTest.csprojAssemblyReference.cache
+/home/al_hardy/Documents/_dev/_play/KubeTest/KubeTest/obj/Debug/netcoreapp2.2/KubeTest.csproj.CoreCompileInputs.cache
+/home/al_hardy/Documents/_dev/_play/KubeTest/KubeTest/obj/Debug/netcoreapp2.2/KubeTest.AssemblyInfoInputs.cache
+/home/al_hardy/Documents/_dev/_play/KubeTest/KubeTest/obj/Debug/netcoreapp2.2/KubeTest.AssemblyInfo.cs
+/home/al_hardy/Documents/_dev/_play/KubeTest/KubeTest/obj/Debug/netcoreapp2.2/KubeTest.dll
+/home/al_hardy/Documents/_dev/_play/KubeTest/KubeTest/obj/Debug/netcoreapp2.2/KubeTest.pdb
