@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="bb8afefd-c703-4b5c-b2c4-6039ab77bd0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KubeTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KubeTest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KubeTest/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/KubeTest/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KubeTest/bin/Debug/netcoreapp2.2/KubeTest.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KubeTest/bin/Debug/netcoreapp2.2/KubeTest.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KubeTest/bin/Debug/netcoreapp2.2/KubeTest.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KubeTest/bin/Debug/netcoreapp2.2/KubeTest.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KubeTest/obj/Debug/netcoreapp2.2/KubeTest.dll" beforeDir="false" afterPath="$PROJECT_DIR$/KubeTest/obj/Debug/netcoreapp2.2/KubeTest.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KubeTest/obj/Debug/netcoreapp2.2/KubeTest.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/KubeTest/obj/Debug/netcoreapp2.2/KubeTest.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/deploy.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +21,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KubeTest/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="435">
               <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
               <folding>
                 <marker date="1563360905714" expanded="false" signature="6:255" ph="..." />
@@ -28,28 +33,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/KubeTest/Startup.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            <state relative-caret-position="580">
+              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
               <folding>
-                <marker date="1563360905726" expanded="false" signature="6:249" ph="..." />
-                <marker date="1563360905726" expanded="true" signature="269:1040" ph="{...}" />
-                <marker date="1563360905726" expanded="true" signature="296:1038" ph="{...}" />
-                <marker date="1563360905726" expanded="true" signature="311:526" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
-                <marker date="1563360905726" expanded="true" signature="593:613" ph="{...}" />
-                <marker date="1563360905726" expanded="true" signature="801:1032" ph="{...}" />
-                <marker date="1563360905726" expanded="true" signature="848:925" ph="{...}" />
+                <marker date="1563447665602" expanded="false" signature="6:249" ph="..." />
+                <marker date="1563447665602" expanded="true" signature="269:1284" ph="{...}" />
+                <marker date="1563447665602" expanded="true" signature="296:1282" ph="{...}" />
+                <marker date="1563447665602" expanded="true" signature="369:389" ph="{...}" />
+                <marker date="1563447665602" expanded="true" signature="470:1276" ph="{...}" />
+                <marker date="1563447665602" expanded="true" signature="517:594" ph="{...}" />
+                <marker date="1563447665602" expanded="true" signature="647:1264" ph="{...}" />
+                <marker date="1563447665602" expanded="true" signature="699:1122" ph="{...}" />
+                <marker date="1563447665602" expanded="true" signature="774:883" ph="{...}" />
+                <marker date="1563447665602" expanded="true" signature="908:1104" ph="{...}" />
+                <marker date="1563447665602" expanded="true" signature="1143:1250" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KubeTest/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="29">
               <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
             </state>
           </provider>
@@ -70,6 +79,7 @@
       <list>
         <option value="$PROJECT_DIR$/KubeTest/Dockerfile.cs" />
         <option value="$PROJECT_DIR$/KubeTest/Dockerfile" />
+        <option value="$PROJECT_DIR$/KubeTest/Startup.cs" />
       </list>
     </option>
   </component>
@@ -92,6 +102,11 @@
           <expand>
             <path>
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="KubeTest" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="KubeTest" type="24d0babc:SolutionExplorerModelNode" />
               <item name="KubeTest" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
@@ -206,12 +221,13 @@
       <workItem from="1563363833371" duration="3751000" />
       <workItem from="1563438396776" duration="203000" />
       <workItem from="1563438628203" duration="613000" />
-      <workItem from="1563440266097" duration="1713000" />
+      <workItem from="1563440266097" duration="2336000" />
+      <workItem from="1563447451874" duration="216000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8322000" />
+    <option name="totallyTimeSpent" value="9161000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -223,16 +239,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="90" y="82" width="3150" height="2078" extended-state="6" />
+    <frame x="90" y="42" width="3150" height="2118" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1617268" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16394514" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.18964633" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.18924731" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -245,7 +261,7 @@
       <window_info anchor="bottom" id="REST Client" order="13" />
       <window_info anchor="bottom" id="Terminal" order="14" />
       <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="16" weight="0.32937366" />
+      <window_info anchor="bottom" id="Build" order="16" weight="0.32903227" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -299,9 +315,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/KubeTest/Dockerfile.cs" />
+    <entry file="file://$PROJECT_DIR$/KubeTest/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/KubeTest/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="435">
           <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding>
             <marker date="1563360905714" expanded="false" signature="6:255" ph="..." />
@@ -314,24 +337,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/KubeTest/Startup.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="580">
+          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
           <folding>
-            <marker date="1563360905726" expanded="false" signature="6:249" ph="..." />
-            <marker date="1563360905726" expanded="true" signature="269:1040" ph="{...}" />
-            <marker date="1563360905726" expanded="true" signature="296:1038" ph="{...}" />
-            <marker date="1563360905726" expanded="true" signature="311:526" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
-            <marker date="1563360905726" expanded="true" signature="593:613" ph="{...}" />
-            <marker date="1563360905726" expanded="true" signature="801:1032" ph="{...}" />
-            <marker date="1563360905726" expanded="true" signature="848:925" ph="{...}" />
+            <marker date="1563447665602" expanded="false" signature="6:249" ph="..." />
+            <marker date="1563447665602" expanded="true" signature="269:1284" ph="{...}" />
+            <marker date="1563447665602" expanded="true" signature="296:1282" ph="{...}" />
+            <marker date="1563447665602" expanded="true" signature="369:389" ph="{...}" />
+            <marker date="1563447665602" expanded="true" signature="470:1276" ph="{...}" />
+            <marker date="1563447665602" expanded="true" signature="517:594" ph="{...}" />
+            <marker date="1563447665602" expanded="true" signature="647:1264" ph="{...}" />
+            <marker date="1563447665602" expanded="true" signature="699:1122" ph="{...}" />
+            <marker date="1563447665602" expanded="true" signature="774:883" ph="{...}" />
+            <marker date="1563447665602" expanded="true" signature="908:1104" ph="{...}" />
+            <marker date="1563447665602" expanded="true" signature="1143:1250" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KubeTest/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
         </state>
       </provider>
     </entry>

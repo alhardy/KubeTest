@@ -8,6 +8,10 @@ spec:
   containers:
   - image: kubetest:v1
     name: kubetest
+    livenessProbe:
+      httpGet:
+        path: /up
+        port: 80
     ports:
     - containerPort: 80
       protocol: TCP

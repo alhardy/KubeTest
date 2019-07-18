@@ -11,13 +11,10 @@ namespace KubeTest
 {
     public class Startup
     {
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
@@ -25,7 +22,25 @@ namespace KubeTest
                 app.UseDeveloperExceptionPage();
             }
 
-            app.Run(async (context) => { await context.Response.WriteAsync("Hello World!"); });
+            app.Run(async (context) =>
+            {
+                if (context.Request.Path == "/up")
+                {
+                    if (DateTime.UtcNow.Minute % 2 == 0)
+                    {
+                        await context.Response.WriteAsync("up");
+                    }
+                    else
+                    {
+                        context.Response.StatusCode = StatusCodes.Status404NotFound;
+                        await context.Response.WriteAsync("down");
+                    }
+                }
+                else
+                {
+                    await context.Response.WriteAsync("Hello World!");
+                }
+            });
         }
     }
 }
