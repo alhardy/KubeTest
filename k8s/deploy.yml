@@ -1,17 +1,23 @@
 apiVersion: v1
-kind: Pod
+kind: ReplicationController
 metadata:
   name: kubetest
-  labels:
-    env: prod
 spec:
-  containers:
-  - image: kubetest:v1
-    name: kubetest
-    livenessProbe:
-      httpGet:
-        path: /up
-        port: 80
-    ports:
-    - containerPort: 80
-      protocol: TCP
+  replicas: 3
+  selector:
+    app: kubetest
+  template:
+    metadata:
+      labels:
+        app: kubetest
+    spec:
+      containers:
+      - image: kubetest:v1
+        name: kubetest
+        livenessProbe:
+          httpGet:
+            path: /up
+            port: 80
+        ports:
+        - containerPort: 80
+          protocol: TCP
