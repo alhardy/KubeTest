@@ -1,0 +1,18 @@
+az provider register -n Microsoft.KeyVault
+az keyvault create --name "kubetest-kv" --resource-group "kubetest-rg" --location australiaeast
+az keyvault secret set --vault-name "kubetest-kv" --name "SecretKey" --value "123"
+
+# Create an Azure AD app registration and Service Principal
+az ad app create --display-name kubetest-kv-reader --identifier-uris https://kubetest-kv-reader.localhost.com --query objectId
+az ad sp create --id {replace-with-object-id} --query appId
+
+# TODO: Login to the azure portal and create a new client secret for the app registration
+
+az keyvault set-policy --name kubetest-kv --spn {reaplace-with-app-id} --secret-permissions get list
+az keyvault set-policy --name kubetest-kv --resource-group kubetest-rg --spn {reaplace-with-app-id} --secret-permissions get list
+
+# TODO: Add "azKeyvaultClientId" and "azKeyvaultClientSecret" to local user secrets i.e. right click project > manage secrets and add:
+# {
+#   "azKeyvaultClientId": "{replace-with-appid}",
+#   "azKeyvaultClientSecret": "{replace-with-client-secret}"
+# }

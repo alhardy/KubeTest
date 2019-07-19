@@ -1,0 +1,5 @@
+az login
+az account list
+az account set --subscription "SUBSCRIPTION-NAME"
+az account show
+az group create --name kubetest-rg --location australiaeast
