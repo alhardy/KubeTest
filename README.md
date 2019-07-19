@@ -21,12 +21,24 @@ $ docker-compose build
 
 ### WINDOWS
 ```
-$ docker run --rm -it -p 8080:80 -p 8081:443 -e ASPNETCORE_URLS="https://+;http://+" -e ASPNETCORE_HTTPS_PORT=8001 -e ASPNETCORE_ENVIRONMENT=Development -e ASPNETCORE_Kestrel__Certificates__Default__Password="@kubetest123" -e ASPNETCORE_Kestrel__Certificates__Default__Path=/https/KubeTest.pfx -v ${HOME}/.aspnet/https:/https/ -v ${env:APPDATA}/microsoft/UserSecrets:/root/.microsoft/usersecrets/ play/kubetest:v1
+$ docker run --rm -it -p 8080:80 -p 8081:443 -e ASPNETCORE_URLS="https://+;http://+" -e ASPNETCORE_HTTPS_PORT=8001 -e ASPNETCORE_ENVIRONMENT=Development -e ASPNETCORE_Kestrel__Certificates__Default__Path=/https/KubeTest.pfx -v ${HOME}/.aspnet/https:/https/ -v ${env:APPDATA}/microsoft/UserSecrets:/root/.microsoft/usersecrets/ play/kubetest:v1
+```
+
+Or with Docker Compose
+
+```
+$ docker-compose -f .\docker-compose.yml -f .\docker-compose.dev.yml -f .\docker-compose.dev.windows.yml up
 ```
 
 ### LINUX
 ```
 $ docker run --rm -it -p 8080:80 -p 8081:443 -e ASPNETCORE_URLS="https://+;http://+" -e ASPNETCORE_HTTPS_PORT=8001 -e ASPNETCORE_ENVIRONMENT=Development -e ASPNETCORE_Kestrel__Certificates__Default__Password="@kubetest123" -e ASPNETCORE_Kestrel__Certificates__Default__Path=/https/KubeTest.pfx -v ${HOME}/.aspnet/https:/https/ -v $HOME/.microsoft/usersecrets:/root/.microsoft/usersecrets/ play/kubetest:v1
+```
+
+Or with Docker Compose
+
+```
+$ docker-compose -f .\docker-compose.yml -f .\docker-compose.dev.yml -f .\docker-compose.dev.linux.yml up
 ```
 
 > Add -d arg to run in background
