@@ -11,8 +11,5 @@ az ad sp create --id {replace-with-object-id} --query appId
 az keyvault set-policy --name kubetest-kv --spn {reaplace-with-app-id} --secret-permissions get list
 az keyvault set-policy --name kubetest-kv --resource-group kubetest-rg --spn {reaplace-with-app-id} --secret-permissions get list
 
-# TODO: Add "azKeyvaultClientId" and "azKeyvaultClientSecret" to local user secrets i.e. right click project > manage secrets and add:
-# {
-#   "azKeyvaultClientId": "{replace-with-appid}",
-#   "azKeyvaultClientSecret": "{replace-with-client-secret}"
-# }
+dotnet user-secrets set "azKeyvaultClientId" "{replace-with-appid}" --project  .\src\KubeTest\KubeTest.csproj
+dotnet user-secrets set "azKeyvaultClientSecret" "{replace-with-client-secret}" --project  .\src\KubeTest\KubeTest.csproj
