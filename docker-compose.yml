@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  kubetest:
+    container_name: kubetest
+    image: play/kubetest:v1
+    ports:
+      - "${KUBETEST_API_HTTP_PORT}:80"
+      - "${KUBETEST_API_HTTPS_PORT}:443"
+    expose:
+      - "${KUBETEST_API_HTTP_PORT}"
+      - "${KUBETEST_API_HTTPS_PORT}"
+    build:
+      context: .
+      dockerfile: src/KubeTest/Dockerfile
