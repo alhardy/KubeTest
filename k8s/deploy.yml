@@ -1,11 +1,15 @@
-apiVersion: v1
-kind: ReplicationController
+apiVersion: apps/v1
+kind: ReplicaSet
 metadata:
   name: kubetest
+  labels:
+    app: kubetest
+    tier: backend
 spec:
   replicas: 3
   selector:
-    app: kubetest
+    matchLabels:
+      app: kubetest
   template:
     metadata:
       labels:
