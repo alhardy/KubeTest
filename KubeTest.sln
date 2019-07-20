@@ -29,6 +29,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "az-scripts", "az-scripts", 
 		az-scripts\2-keyvault.az = az-scripts\2-keyvault.az
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "k8s", "k8s", "{4A5192BD-07D2-45B2-94A0-6D15E616844A}"
+	ProjectSection(SolutionItems) = preProject
+		k8s\deploy.yml = k8s\deploy.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
