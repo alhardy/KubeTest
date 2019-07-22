@@ -41,7 +41,7 @@ Or with Docker Compose
 $ docker-compose -f .\docker-compose.yml -f .\docker-compose.dev.yml -f .\docker-compose.dev.linux.yml up
 ```
 
-> Add -d arg to run in background
+> Add -d arg to run in background with docker run or docker-compose
 > NOTES on HTTPS XPLAT: https://github.com/dotnet/dotnet-docker/blob/master/samples/aspnetapp/aspnetcore-docker-https-development.md
 
 # Deploy to Kubernetes (minikube)
