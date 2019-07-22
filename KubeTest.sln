@@ -32,6 +32,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "k8s", "k8s", "{4A5192BD-07D2-45B2-94A0-6D15E616844A}"
 	ProjectSection(SolutionItems) = preProject
 		k8s\deploy.yml = k8s\deploy.yml
+		k8s\deploy-svc.yml = k8s\deploy-svc.yml
 	EndProjectSection
 EndProject
 Global
