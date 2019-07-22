@@ -8,7 +8,6 @@ az ad sp create --id {replace-with-object-id} --query appId
 
 # TODO: Login to the azure portal and create a new client secret for the app registration
 
-az keyvault set-policy --name kubetest-kv --spn {reaplace-with-app-id} --secret-permissions get list
 az keyvault set-policy --name kubetest-kv --resource-group kubetest-rg --spn {reaplace-with-app-id} --secret-permissions get list
 
 dotnet user-secrets set "azKeyvaultClientId" "{replace-with-appid}" --project  .\src\KubeTest\KubeTest.csproj
