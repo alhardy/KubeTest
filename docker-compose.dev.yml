@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  kubetest:
+    environment:
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=@kubetest123
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/KubeTest.pfx
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+;http://+
+      - ASPNETCORE_HTTPS_PORT=${KUBETEST_API_HTTPS_PORT}

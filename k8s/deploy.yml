@@ -16,7 +16,7 @@ spec:
         app: kubetest
     spec:
       containers:
-      - image: kubetest:v1
+      - image: play/kubetest:v1
         name: kubetest
         livenessProbe:
           httpGet:

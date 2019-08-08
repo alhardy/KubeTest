@@ -1,0 +1,7 @@
+version: '3.4'
+
+services:
+  kubetest:
+    volumes:
+      - $HOME/.aspnet/https:/https/
+      - $HOME/.microsoft/usersecrets/:/root/.microsoft/usersecrets/

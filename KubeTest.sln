@@ -13,12 +13,44 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{B36E3E55-23E2-43E6-809C-1BEE59978902}"
 	ProjectSection(SolutionItems) = preProject
 		.env = .env
+		docker-compose.dev.linux.yml = docker-compose.dev.linux.yml
+		docker-compose.dev.windows.yml = docker-compose.dev.windows.yml
+		docker-compose.dev.yml = docker-compose.dev.yml
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{470BFA4F-3FEE-4F74-AFAF-418C1DD65D07}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KubeTest", "src\KubeTest\KubeTest.csproj", "{C24FB203-603B-4FAC-8632-7FF4BBCD572B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "az-scripts", "az-scripts", "{1CB0F2E4-DD93-4CE3-8A25-51895CED292C}"
+	ProjectSection(SolutionItems) = preProject
+		az-scripts\1-setup-rg.az = az-scripts\1-setup-rg.az
+		az-scripts\2-keyvault.az = az-scripts\2-keyvault.az
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "k8s", "k8s", "{4A5192BD-07D2-45B2-94A0-6D15E616844A}"
+	ProjectSection(SolutionItems) = preProject
+		k8s\deploy.yml = k8s\deploy.yml
+		k8s\deploy-svc.yml = k8s\deploy-svc.yml
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C24FB203-603B-4FAC-8632-7FF4BBCD572B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C24FB203-603B-4FAC-8632-7FF4BBCD572B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C24FB203-603B-4FAC-8632-7FF4BBCD572B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C24FB203-603B-4FAC-8632-7FF4BBCD572B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C24FB203-603B-4FAC-8632-7FF4BBCD572B} = {470BFA4F-3FEE-4F74-AFAF-418C1DD65D07}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6EB33AEF-23E7-4E74-82AD-C3033D073C62}
